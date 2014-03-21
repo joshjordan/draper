@@ -1,6 +1,6 @@
 require 'bundler/setup'
-require 'ammeter/init'
 require 'rails'
+require 'active_support/all'
 
 Bundler.require
 
