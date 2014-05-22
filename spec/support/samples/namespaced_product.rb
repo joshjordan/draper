@@ -16,7 +16,7 @@ module Namespace
       [Namespace::Product.new, Namespace::Product.new]
     end
 
-    def self.scoped
+    def self.all
       [Namespace::Product.new]
     end
 

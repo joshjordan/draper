@@ -17,7 +17,7 @@ class Product < ActiveRecord::Base
     [Product.new, Product.new]
   end
 
-  def self.scoped
+  def self.all
     [Product.new]
   end
 
