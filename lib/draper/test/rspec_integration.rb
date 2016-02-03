@@ -9,9 +9,7 @@ end
 
 RSpec.configure do |config|
   # Automatically tag specs in specs/decorators as type: :decorator
-  config.include Draper::DecoratorExampleGroup, :type => :decorator, :example_group => {
-    :file_path => /spec[\\\/]decorators/
-  }
+  config.include Draper::DecoratorExampleGroup, file_path: /spec[\\\/]decorators/, type: :decorator
 
   # Specs tagged type: :decorator set the Draper view context
   config.before :type => :decorator do
@@ -30,4 +28,3 @@ if defined?(Capybara)
     config.include Capybara::RSpecMatchers, :type => :decorator
   end
 end
-
